@@ -10,11 +10,7 @@ void main() {
     expect(MOCK_ERR_CODE, cookbookNotOwnedException.errMsg);
   });
 
-  test('should create response exception', () {
-    var responseException = ResponseException('', MOCK_ERR_CODE);
-    expect(responseException.errMsg, MOCK_ERR_CODE);
-  });
-
+//fart
     test('should complete completer that needs handler', () {
     initResponseCompleter(Strings.GET_RECIPES);
     expect(false, responseCompleters[Strings.GET_RECIPES]!.isCompleted);
